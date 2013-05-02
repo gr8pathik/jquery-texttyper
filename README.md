@@ -29,7 +29,7 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper
 ```javascript
 $('div.simpleDiv').textTyper();
 ```
-The above code will animate the text which is in simpleDiv<div> tag.
+The above code will animate the text which is in simpleDiv```<div>``` tag.
 
 ### Simple Block with child Element
 ```html
@@ -41,7 +41,7 @@ The above code will animate the text which is in simpleDiv<div> tag.
 ```javascript
 $('div.simpleDiv').textTyper({speed:20});
 ```
-The above code will animate the text of <h2> tag and then <div> tag fastly.
+The above code will animate the text of ```<h2>``` tag and then ```<div>``` tag fastly.
 
 There is more options in TextTyper plugin.
 ## Options

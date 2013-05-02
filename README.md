@@ -11,7 +11,7 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper
 
 1. You need jQuery 1.4+ 
 2. You need textTyper plugin file [textTyper.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper.js) or [textTyper-min.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper-min.js)
-3. If your html has ```HTML5 tags``` and if its not working on ```IE``` then make sure you have added ```html5shiv``` library or any other.
+3. If your html have ```HTML5 tags``` and if its not working on ```IE``` then make sure you have added ```html5shiv``` library.
 
 ```html
 <!-- Pulled from http://code.google.com/p/html5shiv/ -->
@@ -29,7 +29,7 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper
 ```javascript
 $('div.simpleDiv').textTyper();
 ```
-The above code will animate the text which is in simpleDiv(div) tag.
+The above code will animate the text which is in simpleDiv<div> tag.
 
 ### Simple Block with child Element
 ```html
@@ -41,18 +41,18 @@ The above code will animate the text which is in simpleDiv(div) tag.
 ```javascript
 $('div.simpleDiv').textTyper({speed:20});
 ```
-The above code will animate the text of (h2) tag and then (div) tag fastly.
+The above code will animate the text of <h2> tag and then <div> tag fastly.
 
 There is more options in TextTyper plugin.
 ## Options
 ```javascript
 $(selector).textTyper({{
-	typingClass : 'typing', //Additional Class when the typing animation is running
+	typingClass : 'typing', //Additional Class when animation is running
 	beforeAnimation : function(){}, //Callback before the animation starts
 	afterAnimation : function(){}, //Callback after the animation ends
 	speed : 70, //Speed of typing text
 	nextLineDelay : 400, //Wait for some time after one line is typed.
-	startsFrom : 0, //Start form the X characters
+	startsFrom : 0, //Starting point of animation (Number of Characters)
 	cursorHtml : '<span class="typing">|</span>' //Html of cursor
 }
 ```
@@ -62,7 +62,7 @@ $(selector).textTyper({{
 * Initial release.
 
 ## License
-The textTyper component is released under the open source MIT. This means that you can use it any way you want, but I would very much appreciate if you take a minute and support the project through a donation.
+The textTyper component is released under the open source MIT.
 
 ## Author Info
 * Name : [Pathik Gandhi](http://pathikgandhi.info) (http://pathikgandhi.info)

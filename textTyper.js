@@ -1,5 +1,10 @@
 /*!
- * Text Animation 0.1
+ * jQuery Text Typer
+ * 
+ * @version : 1.0
+ * @author : Pathik Gandhi (http://pathikgandhi.info)
+ * @plugin_uri : https://github.com/gr8pathik/jquery-texttyper
+ * @plugin_demo : http://labs.pathikgandhi.info/jquery/textTyper
  */
 (function($){
 	"use strict";

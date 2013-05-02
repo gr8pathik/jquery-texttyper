@@ -5,7 +5,7 @@ TextTyper is a jQuery plugin to animate you text like typewriter. TextTyper is u
 
 Tested with jQuery versions 1.4+
 
-Documentation and Demos are here: http://labs.pathikgandhi.info/textTyper/
+Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper/
 
 ## What need
 
@@ -36,7 +36,7 @@ The above code will animate the text of (h2) tag and then (div) tag fastly.
 
 There is more options in textTyper plugin.
 ## Options
-```
+```javascript
 $(selector).textTyper({{
 	typingClass : 'typing', //Additional Class when the typing animation is running
 	beforeAnimation : function(){}, //Callback before the animation starts

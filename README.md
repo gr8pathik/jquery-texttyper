@@ -10,7 +10,7 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper
 ## What need and Troubleshooting
 
 1. You need jQuery 1.4+ 
-2. You need textTyper plugin file ```[textTyper.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper.js)``` or ```[textTyper-min.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper-min.js)```
+2. You need textTyper plugin file [textTyper.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper.js) or [textTyper-min.js](https://github.com/gr8pathik/jquery-texttyper/blob/master/js/textTyper-min.js)
 3. If your html has ```HTML5 tags``` and if its not working on ```IE``` then make sure you have added ```html5shiv``` library or any other.
 
 ```html

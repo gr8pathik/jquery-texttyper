@@ -12,12 +12,15 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper
 1. You need jQuery 1.4+ 
 2. You need textTyper plugin file textTyper.js or textTyper-min.js
 3. If your html has HTML5 tags and if its not working on IE then make sure you have added html5shiv library or any other.
+
 ```html
 <!-- Pulled from http://code.google.com/p/html5shiv/ -->
+
 <!--[if lt IE 9]>
 <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 ```
+
 ## Example
 ### Simple Block
 ```html

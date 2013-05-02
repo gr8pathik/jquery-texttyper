@@ -49,6 +49,13 @@ $(selector).textTyper({{
 ```
 
 ## History
-
 ### 1.0.0
 * Initial release.
+
+## License
+The textTyper component is released under the open source MIT. This means that you can use it any way you want, but I would very much appreciate if you take a minute and support the project through a donation.
+
+## Author Info
+* Name : [Pathik Gandhi](http://pathikgandhi.info) (http://pathikgandhi.info)
+* Twitter : [gr8pathik](http://twitter.com/gr8pathik) (http://twitter.com/gr8pathik)
+* Github : [gr8pathik](http://github.com/gr8pathik) (http://github.com/gr8pathik)

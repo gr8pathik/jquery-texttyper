@@ -1,17 +1,23 @@
-textTyper
+TextTyper
 =========
 
-TextTyper is a jQuery plugin to animate you text like typewriter. TextTyper is use to attract the clients to show the points you want. You can use TextTyper in any element on Html and it will work easily with you own css. TextTyper don't need any extra css. TextTyper is also work with the child elements. TextTyper is tested on FF, Chrome, IE7 - IE10, Safari and Opera.
+TextTyper is a jQuery plugin to animate your text just like typewriter. It is used to provide automatic flow to your text-content very smoothly . This powerful plugin can work any HTML tags and you can even apply your own css to make  animation more beautiful.It will  also work with  child elements. This plugin is fully tested on FF, Chrome, IE7 - IE10, Safari and Opera.
 
 Tested with jQuery versions 1.4+
 
 Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/textTyper/
 
-## What need
+## What need and Troubleshooting
 
 1. You need jQuery 1.4+ 
 2. You need textTyper plugin file textTyper.js or textTyper-min.js
-
+3. If your html has HTML5 tags and if its not working on IE then make sure you have added html5shiv library or any other.
+```html
+<!-- Pulled from http://code.google.com/p/html5shiv/ -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+```
 ## Example
 ### Simple Block
 ```html
@@ -34,7 +40,7 @@ $('div.simpleDiv').textTyper({speed:20});
 ```
 The above code will animate the text of (h2) tag and then (div) tag fastly.
 
-There is more options in textTyper plugin.
+There is more options in TextTyper plugin.
 ## Options
 ```javascript
 $(selector).textTyper({{

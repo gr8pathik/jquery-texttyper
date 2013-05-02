@@ -22,55 +22,20 @@
 	
 	<body>
 		<div class="main">
-		<aside id="default-text">
-			<ul class="content">
-	            <li id="first-line">Hello. I'm <strong>Steve Krueger.</strong><br/></li>
-	            <li>I'm a founding partner of <a href="http://thejibe.com" target="_blank">The Jibe</a>, an ecommerce web development agency situated in beautiful Vancouver, Canada.</li>
-	            <li>I'm an avid technologist, moonlight as an electronic DJ throughout Vancouver, and own a monochromatic t-shirt collection.<br/></li>
-	            <li><a href="http://konnection.ca" target="_blank">I occassionally make loud noises.</a></li>
-	        </ul>
-		</aside>
-		
-		<article class="content text-anim">
-			<h1>Avgrund</h1>
-			<p>
-				A modal concept which aims to give a sense of depth between the page and modal layers. Click the button below to give it a try.
-			</p>
-			<button onclick="javascript:openDialogZoomIn();">Open Dialog Zoom In</button>
-			<button onclick="javascript:openDialogZoomOut();">Open Dialog Zoom Out</button><br />
-			<button onclick="javascript:openDialogRotateLeft();">Open Dialog Rotate Left</button>
-			<button onclick="javascript:openDialogRotateRight();">Open Dialog Rotate Right</button>
-			<p>
-				Uses CSS transforms to scale components and CSS filters to blur the page. Built for the fun of 
-				it, not intended for any practical use.
-			</p>
-			<p>
-				<em>Avgrund</em> is Swedish for abyss.
-			</p>
-
-			<div class="sharing">
-				<a href="http://twitter.com/share" class="twitter-share-button" data-text="Avgrund - a depth-based modal concept from @hakimel" data-url="http://lab.hakim.se/avgrund" data-count="small" data-related="hakimel"></a>
+			<div class="block">
+				<h2>Simple Block Text</h2>
+				<div class="simpleDiv">TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+				<pre>
+					$('div.simpleDiv').textTyper();
+				</pre>
 			</div>
-		</article>
+		</div>
 
-		<aside id="default-other-text" class="content text-anim">
-			<h2>That's all, folks</h2>
-			<p>
-				You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
-			</p>
-			<p>
-				If you like this you would probably enjoy <a href="http://lab.hakim.se/meny">Meny</a>, <a href="http://lab.hakim.se/reveal-js">reveal.js</a> and <a href="http://lab.hakim.se/scroll-effects">stroll.js</a>.
-			</p>
-			<button onclick="javascript:closeDialog();">Close</button>
-		</aside>
-	</div>
-
-		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> -->		
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<!--<script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>-->
 		<script type="text/javascript" src="textTyper.js"></script>
 		<script>
-			$('ul.content').textTyper();
-			$('.text-anim').textTyper();			
+			$('div.simpleDiv').textTyper();
 		</script>
 	</body>
 </html>

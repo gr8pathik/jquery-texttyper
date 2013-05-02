@@ -6,13 +6,13 @@
 	$.fn.textTyper = function(options) {
 		
 		var defaults = {
-			typingClass : 'dollar',
-			beforeAnimation : function(){},
-			afterAnimation : function(){},
-			speed : 70,
-			nextLineDelay : 400,
-			startsFrom : 0,
-			cusorHtml : '<span class="typing">|</span>'
+			typingClass : 'typing', //Additional Class when the typing animation is running
+			beforeAnimation : function(){}, //Callback before the animation starts
+			afterAnimation : function(){}, //Callback after the animation ends
+			speed : 70, //Speed of typing text
+			nextLineDelay : 400, //Wait for some time after one line is typed.
+			startsFrom : 0, //Start form the X characters
+			cursorHtml : '<span class="typing">|</span>' //Html of cursor
 		},
 		settings = $.extend({}, defaults, options);
 		  
@@ -46,7 +46,7 @@
 		        
 		        var inty = setInterval(function() {
 		            //  MOAR TEXTS
-		            var cursorTemp = settings.cusorHtml;
+		            var cursorTemp = settings.cursorHtml;
 		            /*if(settings.cursorEffect == 'blink'){
 		            	cursorTemp = $(cursorTemp).css('text-decoration','blink');
 		            	//Create a Gohost div to get the current html

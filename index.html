@@ -29,13 +29,24 @@
 					$('div.simpleDiv').textTyper();
 				</pre>
 			</div>
+			<div class="block">
+				<div class="simpleDiv1">
+					<h2>Simple Block Text With Child Elements</h2>
+					<div>TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+				</div>
+				<pre>
+					$('div.simpleDiv').textTyper({speed:20});
+				</pre>
+			</div>
 		</div>
 
 		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 		<!--<script src="http://code.jquery.com/jquery-1.4.1.min.js"></script>-->
 		<script type="text/javascript" src="textTyper.js"></script>
 		<script>
+		
 			$('div.simpleDiv').textTyper();
+			$('div.simpleDiv1').textTyper({speed:20});
 		</script>
 	</body>
 </html>

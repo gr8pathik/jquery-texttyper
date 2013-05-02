@@ -20,6 +20,33 @@ Documentation and Demos are here: http://labs.pathikgandhi.info/textTyper/
 ```javascript
 $('div.simpleDiv').textTyper();
 ```
+The above code will animate the text which is in simpleDiv(div) tag.
+
+### Simple Block with child Element
+```html
+<div class="simpleDiv">
+	<h2>Simple Block Text With Child Elements</h2>
+	<div>TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+</div>
+```
+```javascript
+$('div.simpleDiv').textTyper({speed:20});
+```
+The above code will animate the text of (h2) tag and then (div) tag fastly.
+
+There is more options in textTyper plugin.
+## Options
+```
+$(selector).textTyper({{
+	typingClass : 'typing', //Additional Class when the typing animation is running
+	beforeAnimation : function(){}, //Callback before the animation starts
+	afterAnimation : function(){}, //Callback after the animation ends
+	speed : 70, //Speed of typing text
+	nextLineDelay : 400, //Wait for some time after one line is typed.
+	startsFrom : 0, //Start form the X characters
+	cursorHtml : '<span class="typing">|</span>' //Html of cursor
+}
+```
 
 ## History
 

@@ -1,0 +1,46 @@
+/* C to the S to the S */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #f9f9f9;
+    color: #222;
+    
+    font: 15px/24px "Bitstream Vera Sans Mono", "Anonymous Pro", "Consolas", monospace;
+    text-shadow: 0 1px 1px rgba(0,0,0,.25);
+    letter-spacing: -0.01em;
+}
+
+.main {
+    list-style: none;
+    margin: 62px;
+}
+ul{
+	list-style: none;
+}
+ul li {
+    padding: 10px 0;
+}
+
+#first-line {
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    border-bottom: 1px dotted #ccc;
+    background: #111;
+    color: #fff;
+}
+
+a:hover {
+    background: #84a403;
+    color: #fff;
+}

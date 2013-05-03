@@ -30,12 +30,12 @@
 		  	repeatInt = 1,
 		  	defaultCursorClass = "typingCursor";
 		  	//  Get all children if any or get current one
-	        var all = ($this.children().length > 0)?$this.children():$this,
+	        var all = $this,
 	        i = all.length,
 	        html = [];
 	        //  Censorship, yo
 		    while(i--) {
-		        html[i] = $(all[i]).html();
+		        html[i] = ($(all[i]).html().trim());
 		        $(all[i]).html('');
 		    }
 

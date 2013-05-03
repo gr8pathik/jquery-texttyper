@@ -22,7 +22,7 @@ Documentation and Demos are here: http://blog.pathikgandhi.info/jquery/textTyper
 ```
 
 ## Example
-### Simple Block
+### Simple block
 ```html
 <div class="simpleDiv">TextTyper is a jQuery plugin to animate you text like typewriter.</div>
 ```
@@ -31,7 +31,7 @@ $('div.simpleDiv').textTyper();
 ```
 The above code will animate the text which is in simpleDiv```<div>``` tag.
 
-### Simple Block with child Element
+### Simple block with child element
 ```html
 <div class="simpleDiv">
 	<h2>Simple Block Text With Child Elements</h2>
@@ -43,7 +43,7 @@ $('div.simpleDiv').textTyper({speed:20});
 ```
 The above code will animate the text of ```<h2>``` tag and then ```<div>``` tag fastly.
 
-### Simple Block with child Element
+### Simple block with child element animate two times
 ```html
 <div class="simpleDiv">
 	<h2>Simple Block Text Animate Two Times</h2>

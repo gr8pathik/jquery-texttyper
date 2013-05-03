@@ -5,7 +5,7 @@ TextTyper is a jQuery plugin to animate your text just like typewriter. It is us
 
 Tested with jQuery versions 1.4+
 
-Documentation and Demos are here: http://blog.pathikgandhi.info/jquery/textTyper/
+Documentation and Demos are here: http://labs.pathikgandhi.info/jquery/texttyper
 
 ## What need and Troubleshooting
 

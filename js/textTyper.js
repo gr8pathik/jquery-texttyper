@@ -4,7 +4,7 @@
  * @version : 1.1.0
  * @author : Pathik Gandhi (http://pathikgandhi.info)
  * @plugin_uri : https://github.com/gr8pathik/jquery-texttyper
- * @plugin_demo : http://labs.pathikgandhi.info/jquery/textTyper
+ * @plugin_demo : http://labs.pathikgandhi.info/jquery/texttyper
  */
 (function($){
 	"use strict";

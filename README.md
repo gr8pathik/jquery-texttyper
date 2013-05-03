@@ -53,11 +53,25 @@ $(selector).textTyper({{
 	speed : 70, //Speed of typing text
 	nextLineDelay : 400, //Wait for some time after one line is typed.
 	startsFrom : 0, //Starting point of animation (Number of Characters)
+	repeatAnimation : true, //Repeat the animation
+	repeatDelay : 4000, //Delay between Repeat animation
+	repeatTimes : 0, //How much time you want to repeat the animation (0 means infinite)
 	cursorHtml : '<span class="typing">|</span>' //Html of cursor
 }
 ```
 
 ## History
+
+### 1.1.0
+
+#### New Features
+* Added `repeatAnimation` option for repeat the animation.
+* Added `repeatDelay` option for delaying time between Repeat animation
+* Added `repeatTimes` option for how much time you want to repeat the animation(0 means infinite)
+
+#### Bug Fixes
+* Hide the cursor after animation is completed each time
+
 ### 1.0.0
 * Initial release.
 

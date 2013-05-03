@@ -17,18 +17,14 @@
 			speed : 70, //Speed of typing text
 			nextLineDelay : 400, //Wait for some time after one line is typed.
 			startsFrom : 0, //Start form the X characters
-			repeatAnimation : true, //Repeat the animation
-			repeatDelay : 4000, //Delay between Repeat animation
-			repeatTimes : 0, //How much time you want to repeat the animation (0 means infinite)
-			cursorHtml : '<span class="cursor">|</span>' //Html of cursor
+			repeatAnimation : false, //Repeat the animation
+			cursorHtml : '<span class="typing">|</span>' //Html of cursor
 		},
 		settings = $.extend({}, defaults, options);
 		  
 		this.each(function() {
 			//store this in $this variable
-		  	var $this = $(this),
-		  	repeatInt = 1,
-		  	defaultCursorClass = "typingCursor";
+		  	var $this = $(this);
 		  	//  Get all children if any or get current one
 	        var all = ($this.children().length > 0)?$this.children():$this,
 	        i = all.length,
@@ -46,7 +42,6 @@
 		    }
 	        //  Go all Frankenstein and shit
 		    $this.animate = function(i) {
-		    	console.log($(settings.cursorHtml).html());
 		        var me = all[i],		        
 	            add = settings.typingClass,	            
 	            //  C = character delay
@@ -54,10 +49,10 @@
 	            c = settings.startsFrom;
 		        //  Censor the page
 		        $(me).addClass(add);
+		        
 		        var inty = setInterval(function() {
 		            //  MOAR TEXTS
 		            var cursorTemp = settings.cursorHtml;
-		            cursorTemp = $('<div>').append($(cursorTemp).addClass(defaultCursorClass)).html();
 		            /*if(settings.cursorEffect == 'blink'){
 		            	cursorTemp = $(cursorTemp).css('text-decoration','blink');
 		            	//Create a Gohost div to get the current html
@@ -79,15 +74,10 @@
 		                        $this.animate(i);
 		                    }, settings.nextLineDelay);
 		                }else{
-		                	$(me).find('.'+defaultCursorClass).hide();
 		                	var afterAnim = settings.afterAnimation;
 		    				if(afterAnim) afterAnim();
-		    				if(settings.repeatAnimation && (settings.repeatTimes == 0 || repeatInt < settings.repeatTimes)){
-		    					setTimeout(function(){
-		    						$this.animate(0);
-		    						repeatInt++;
-		    					}, settings.repeatDelay);
-		    				}           	
+		    				console.log('Complete');
+		    				$this.animate(0);
 		                }
 		            }
 		        }, settings.speed);

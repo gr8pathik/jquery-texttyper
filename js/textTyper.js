@@ -1,7 +1,7 @@
 /*!
  * jQuery Text Typer
  * 
- * @version : 1.0
+ * @version : 1.1.0
  * @author : Pathik Gandhi (http://pathikgandhi.info)
  * @plugin_uri : https://github.com/gr8pathik/jquery-texttyper
  * @plugin_demo : http://labs.pathikgandhi.info/jquery/textTyper
@@ -17,9 +17,9 @@
 			speed : 70, //Speed of typing text
 			nextLineDelay : 400, //Wait for some time after one line is typed.
 			startsFrom : 0, //Start form the X characters
-			repeatAnimation : true, //Repeat the animation
+			repeatAnimation : false, //Repeat the animation
 			repeatDelay : 4000, //Delay between Repeat animation
-			repeatTimes : 0, //How much time you want to repeat the animation (0 means infinite)
+			repeatTimes : 1, //How much time you want to repeat the animation (0 means infinite)
 			cursorHtml : '<span class="cursor">|</span>' //Html of cursor
 		},
 		settings = $.extend({}, defaults, options);
@@ -46,7 +46,6 @@
 		    }
 	        //  Go all Frankenstein and shit
 		    $this.animate = function(i) {
-		    	console.log($(settings.cursorHtml).html());
 		        var me = all[i],		        
 	            add = settings.typingClass,	            
 	            //  C = character delay

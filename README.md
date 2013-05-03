@@ -43,6 +43,18 @@ $('div.simpleDiv').textTyper({speed:20});
 ```
 The above code will animate the text of ```<h2>``` tag and then ```<div>``` tag fastly.
 
+### Simple Block with child Element
+```html
+<div class="simpleDiv">
+	<h2>Simple Block Text Animate Two Times</h2>
+	<div>TextTyper is a jQuery plugin to animate you text like typewriter.</div>
+</div>
+```
+```javascript
+$('div.simpleDiv').textTyper({repeatTimes:true,repeatTimes:2});
+```
+The above code will animate the text Two Times.
+
 There is more options in TextTyper plugin.
 ## Options
 ```javascript
@@ -53,9 +65,9 @@ $(selector).textTyper({{
 	speed : 70, //Speed of typing text
 	nextLineDelay : 400, //Wait for some time after one line is typed.
 	startsFrom : 0, //Starting point of animation (Number of Characters)
-	repeatAnimation : true, //Repeat the animation
+	repeatAnimation : false, //Repeat the animation
 	repeatDelay : 4000, //Delay between Repeat animation
-	repeatTimes : 0, //How much time you want to repeat the animation (0 means infinite)
+	repeatTimes : 1, //How much time you want to repeat the animation (0 means infinite)
 	cursorHtml : '<span class="typing">|</span>' //Html of cursor
 }
 ```

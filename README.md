@@ -58,7 +58,7 @@ The above code will animate the text Two Times.
 There is more options in TextTyper plugin.
 ## Options
 ```javascript
-$(selector).textTyper({{
+$(selector).textTyper({
 	typingClass : 'typing', //Additional Class when animation is running
 	beforeAnimation : function(){}, //Callback before the animation starts
 	afterAnimation : function(){}, //Callback after the animation ends
@@ -69,7 +69,7 @@ $(selector).textTyper({{
 	repeatDelay : 4000, //Delay between Repeat animation
 	repeatTimes : 1, //How much time you want to repeat the animation (0 means infinite)
 	cursorHtml : '<span class="typing">|</span>' //Html of cursor
-}
+})
 ```
 
 ## History

@@ -79,13 +79,14 @@
 		                    }, settings.nextLineDelay);
 		                }else{
 		                	$(me).find('.'+defaultCursorClass).remove();
-		                	var afterAnim = settings.afterAnimation;
-		    				if(afterAnim) afterAnim();
 		    				if(settings.repeatAnimation && (settings.repeatTimes == 0 || repeatInt < settings.repeatTimes)){
 		    					setTimeout(function(){
 		    						$this.animate(0);
 		    						repeatInt++;
 		    					}, settings.repeatDelay);
+		    				} else{
+		    					var afterAnim = settings.afterAnimation;
+		    					if(afterAnim) afterAnim();
 		    				}           	
 		                }
 		            }

@@ -51,7 +51,7 @@ The above code will animate the text of ```<h2>``` tag and then ```<div>``` tag 
 </div>
 ```
 ```javascript
-$('div.simpleDiv').textTyper({repeatTimes:true,repeatTimes:2});
+$('div.simpleDiv').textTyper({repeatAnimation:true,repeatTimes:2});
 ```
 The above code will animate the text Two Times.
 
@@ -83,6 +83,7 @@ $(selector).textTyper({
 
 #### Bug Fixes
 * Hide the cursor after animation is completed each time
+* Repeat Issue
 
 ### 1.0.0
 * Initial release.

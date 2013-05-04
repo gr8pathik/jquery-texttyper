@@ -35,7 +35,7 @@
 	        html = [];
 	        //  Censorship, yo
 		    while(i--) {
-		        html[i] = ($(all[i]).html().trim());
+		        html[i] = ($.trim($(all[i]).html()));
 		        $(all[i]).html('');
 		    }
 

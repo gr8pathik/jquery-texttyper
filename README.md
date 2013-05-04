@@ -84,6 +84,7 @@ $(selector).textTyper({
 #### Bug Fixes
 * Hide the cursor after animation is completed each time
 * Repeat Issue
+* IE issue
 
 ### 1.0.0
 * Initial release.
